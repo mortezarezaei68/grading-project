@@ -1,66 +1,28 @@
-# Microservices Architecture for Order Management System (OMS)
 ```mermaid
-graph TD
-%% Order Service Central Hub
-  A(Order Service)
+graph LR
+A[Order Processing Service] --> B[Order Payment Service]
+A --> C[Inventory Service]
+A --> D[Order Fulfillment Service]
+A --> E[Order Notification Service]
+A --> F[Order Cancellation Service]
 
-%% Key Microservices Connecting to Order Service
-  B[Inventory Service]
-  C[Payment Service]
-  D[Shipping Service]
-  E[Customer Service]
-  F[Notification Service]
-  G[Cart Service]
-  H[Discount/Pricing Service]
-  I[Return/Refund Service]
-  J[Analytics/Reporting Service]
-  K[Catalog/Product Service]
+    D --> G[Shipping Service]
+    D --> H[Packaging Service]
+    
+    F --> B[Order Payment Service]
+    F --> C[Inventory Service]
+    F --> E[Order Notification Service]
 
-%% Microservices Interactions with Order Service
-  A --> B
-  A --> C
-  A --> D
-  A --> E
-  A --> F
-  A --> G
-  A --> H
-  A --> I
-  A --> J
-  A --> K
-
-%% Payment Interaction
-  C --> A
-  C --> I
-
-%% Inventory and Shipping
-  B --> A
-  B --> D
-
-%% Return/Refund
-  I --> A
-  I --> D
-
-%% Notifications
-  F --> A
-  F --> C
-  F --> D
-  F --> I
-
-%% Analytics and Reporting
-  J --> A
-  J --> B
-  J --> C
-  J --> D
-  J --> E
-
-%% Cart and Pricing Interaction
-  G --> A
-  G --> H
-  H --> G
-  H --> A
-
-%% Catalog/Product Service
-  K --> G
-  K --> A
+    %% Event-driven communication
+    A -- "OrderCreated Event" --> B
+    B -- "PaymentProcessed Event" --> C
+    C -- "InventoryUpdated Event" --> D
+    D -- "FulfillmentCompleted Event" --> E
+    F -- "OrderCancelled Event" --> E
+    F -- "RefundProcessed Event" --> B
+    
+    %% Routing Slips (dynamic workflow steps)
+    D -- "Fulfillment Steps" --> G
+    D -- "Fulfillment Steps" --> H
 
 ```

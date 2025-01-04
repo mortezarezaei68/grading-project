@@ -20,7 +20,7 @@ For **CQRS**, we will use separate databases for **read** and **write** operatio
 
 1. **Order Processing Service**:
    - **Write Database**: **PostgreSQL** or **SQL Server** (relational, strong consistency)
-   - **Read Database**: **PostgreSQL** or **Materialized Views** for consistency across data.
+   - **Read Database**: **PostgreSQL** for consistency across data.
    
 2. **Order Fulfillment Service**:
    - **Write Database**: **PostgreSQL** (eventual consistency acceptable)
@@ -28,7 +28,7 @@ For **CQRS**, we will use separate databases for **read** and **write** operatio
 
 3. **Order Tracking Service**:
    - **Write Database**: **PostgreSQL** (strong consistency for updates)
-   - **Read Database**: **Cassandra** or **Cosmos DB** (availability and scalability for real-time tracking)
+   - **Read Database**: **Cassandra** (availability and scalability for real-time tracking)
 
 4. **Order Payment Service**:
    - **Write Database**: **SQL Server** or **PostgreSQL** (strict consistency for transactions)
@@ -43,8 +43,8 @@ For **CQRS**, we will use separate databases for **read** and **write** operatio
    - **Read Database**: **MongoDB** (availability-focused)
 
 7. **Order History Service**:
-   - **Write Database**: **Cassandra** or **Cosmos DB** (availability and partition tolerance)
-   - **Read Database**: **Cassandra** or **Cosmos DB** (availability for fast historical lookups)
+   - **Write Database**: **Cassandra**  (availability and partition tolerance)
+   - **Read Database**: **Cassandra** (availability for fast historical lookups)
 
 8. **Order Reporting & Analytics Service**:
    - **Write Database**: **PostgreSQL** or **SQL Server**
@@ -71,5 +71,5 @@ For **CQRS**, we will use separate databases for **read** and **write** operatio
 
 ## Next Steps
 1. Set up **PostgreSQL** and **SQL Server** for services requiring strong consistency (Order Processing, Payment).
-2. Implement **MongoDB**, **Cassandra**, or **Cosmos DB** for services prioritizing availability (Order Tracking, Reporting).
+2. Implement **MongoDB**, **Cassandra** for services prioritizing availability (Order Tracking, Reporting).
 3. Ensure proper monitoring and replication mechanisms between read and write databases to maintain CQRS integrity.
