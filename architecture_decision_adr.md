@@ -12,7 +12,7 @@ The business requires that the Order Management System be broken down into indep
 
 ## Problem
 
-The key challenge is how to architect the OMS in a way that ensures:
+The key challenge is how to design the OMS in a way that ensures:
 
 - Each part of the system (e.g., order processing, order tracking) can scale independently.
 - Services are maintainable and deployable independently.
