@@ -50,6 +50,14 @@
               "target": "Package",
               "version": "[3.1.0, )"
             },
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[4.27.0, )"
+            },
+            "Selenium.WebDriver.ChromeDriver": {
+              "target": "Package",
+              "version": "[131.0.6778.26400, )"
+            },
             "coverlet.collector": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
