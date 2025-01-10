@@ -102,28 +102,5 @@ namespace OrderNotificationService.Tests.Integration
     }
 
     // Event and Log classes for testing purposes
-    public class OrderShippedEvent
-    {
-        public Guid OrderId { get; set; }
-        public DateTime ShippedDate { get; set; }
-    }
-
-    public class PaymentCompletedEvent
-    {
-        public Guid OrderId { get; set; }
-        public DateTime PaymentDate { get; set; }
-    }
-
-    public class Notification
-    {
-        public Guid OrderId { get; set; }
-        public string Message { get; set; }
-    }
-
-    public class Log
-    {
-        public Guid OrderId { get; set; }
-        public string Level { get; set; }
-        public string Message { get; set; }
-    }
 }
+
