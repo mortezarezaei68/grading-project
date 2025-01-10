@@ -125,7 +125,7 @@ For microservice-to-microservice communication, we will use a Service Discovery 
 
 The decision to use a microservices-based architecture with event-driven communication will ensure the OMS can meet business requirements for scalability, maintainability, and flexibility, while supporting complex workflows like order creation, payment processing, and fulfillment.
 
-## Next Steps
+## Steps
 
 - Define and design REST APIs for synchronous service calls.
 - Set up the message broker (Kafka or RabbitMQ) to handle event-driven communication.

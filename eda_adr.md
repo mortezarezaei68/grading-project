@@ -32,7 +32,7 @@ For enhanced scalability and decoupling between microservices, we aim to adopt a
 - **Increased Complexity**: Introducing Sagas and managing distributed transactions adds complexity to system orchestration and monitoring.
 - **Operational Overhead**: Message queue infrastructure (e.g., RabbitMQ) and event bus management will require careful monitoring and tuning for optimal performance.
 
-#### Next Steps
+#### Steps
 1. Implement **MassTransit** with **RabbitMQ** as the message broker for inter-service communication.
 2. Set up the **Mediator pattern** for internal command and query handling between service layers.
 3. Implement **MassTransit Sagas** to coordinate distributed workflows and transaction handling across microservices.

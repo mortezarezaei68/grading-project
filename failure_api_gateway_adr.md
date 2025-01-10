@@ -43,9 +43,6 @@ To mitigate the risk of SPOF, the following strategies will be adopted:
 - **Backup Configurations**: Backup configurations and policies will be implemented for the API Gateway, ensuring that in case of a major failure, the gateway can be restored to a previous stable state quickly.
 - **Failover and Redundancy**: API Gateway failover policies will be defined to automatically switch to backup instances in the event of an instance or region failure.
 
-### 8. **Managed API Gateway Services (Optional)**
-- **Cloud-Native API Gateway Services**: Where applicable, managed API Gateway services (such as AWS API Gateway, Azure API Management, Google Cloud API Gateway) will be considered, as they inherently provide high availability, scaling, and fault tolerance features.
-
 ## Consequences
 
 ### Positive
@@ -59,7 +56,7 @@ To mitigate the risk of SPOF, the following strategies will be adopted:
 - **Cost Overhead**: Redundant deployments across multiple availability zones or regions will increase operational costs.
 - **Monitoring and Maintenance**: Setting up and maintaining robust monitoring and health check systems requires additional resources.
 
-## Next Steps
+## Steps
 
 1. **Deploy API Gateway in Multiple Availability Zones**: Configure API Gateway instances in different availability zones for fault tolerance.
 2. **Implement Auto-Scaling**: Configure auto-scaling policies for the API Gateway instances based on traffic load.

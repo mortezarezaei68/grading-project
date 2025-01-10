@@ -69,7 +69,7 @@ For **CQRS**, we will use separate databases for **read** and **write** operatio
 - Managing multiple databases introduces additional operational complexity.
 - Requires careful coordination between write and read models to ensure eventual consistency in read replicas.
 
-## Next Steps
+## Steps
 1. Set up **PostgreSQL** and **SQL Server** for services requiring strong consistency (Order Processing, Payment).
 2. Implement **MongoDB**, **Cassandra** for services prioritizing availability (Order Tracking, Reporting).
 3. Ensure proper monitoring and replication mechanisms between read and write databases to maintain CQRS integrity.
