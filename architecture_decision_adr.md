@@ -131,9 +131,3 @@ The decision to use a microservices-based architecture with event-driven communi
 - Set up the message broker (Kafka or RabbitMQ) to handle event-driven communication.
 - Implement the API Gateway and service discovery.
 - Begin the development of individual microservices following the outlined architecture.
-
-**Approved by**:
-
-- [Project Owner Name]
-- [Tech Lead Name]
-- [Architect Name]

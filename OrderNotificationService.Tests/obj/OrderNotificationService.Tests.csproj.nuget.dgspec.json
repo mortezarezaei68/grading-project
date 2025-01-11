@@ -1,26 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc43/MyProjects/Alibaba_Promotion_Project/OrderNotificationService.Tests/OrderNotificationService.Tests.csproj": {}
+    "/home/alibaba/My-Project/grading-project/OrderNotificationService.Tests/OrderNotificationService.Tests.csproj": {}
   },
   "projects": {
-    "/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc43/MyProjects/Alibaba_Promotion_Project/OrderNotificationService.Tests/OrderNotificationService.Tests.csproj": {
+    "/home/alibaba/My-Project/grading-project/OrderNotificationService.Tests/OrderNotificationService.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc43/MyProjects/Alibaba_Promotion_Project/OrderNotificationService.Tests/OrderNotificationService.Tests.csproj",
+        "projectUniqueName": "/home/alibaba/My-Project/grading-project/OrderNotificationService.Tests/OrderNotificationService.Tests.csproj",
         "projectName": "OrderNotificationService.Tests",
-        "projectPath": "/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc43/MyProjects/Alibaba_Promotion_Project/OrderNotificationService.Tests/OrderNotificationService.Tests.csproj",
-        "packagesPath": "/home/morteza/.nuget/packages/",
-        "outputPath": "/media/morteza/6b53ded8-ff21-4348-afd5-962880213bc43/MyProjects/Alibaba_Promotion_Project/OrderNotificationService.Tests/obj/",
+        "projectPath": "/home/alibaba/My-Project/grading-project/OrderNotificationService.Tests/OrderNotificationService.Tests.csproj",
+        "packagesPath": "/home/alibaba/.nuget/packages/",
+        "outputPath": "/home/alibaba/My-Project/grading-project/OrderNotificationService.Tests/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/morteza/.nuget/NuGet/NuGet.Config"
+          "/home/alibaba/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "https://git.alibaba.ir/api/v4/projects/1524/packages/nuget/index.json": {},
+          "https://nexus.indraproject.ir/repository/nuget.org-proxy/": {}
         },
         "frameworks": {
           "net6.0": {
@@ -81,16 +82,27 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.136/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.111/RuntimeIdentifierGraph.json"
         }
       }
     }
